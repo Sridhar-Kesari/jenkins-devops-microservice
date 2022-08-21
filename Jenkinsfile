@@ -36,6 +36,15 @@ pipeline {
  				echo "Integration Test"
 			}
 		}
+	} 
+	post{
+		echo 'I am awesome. I run always - SridharKesari'
+	}
+	success{
+		echo 'I run when you are successful - SridharKesari'
+	}
+	failure{
+		echo 'I run when you fail - SridharKesari'
 	}
 }
 
