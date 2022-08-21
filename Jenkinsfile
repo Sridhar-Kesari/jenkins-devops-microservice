@@ -37,14 +37,17 @@ pipeline {
 			}
 		}
 	} 
+	
 	post{
-		echo 'I am awesome. I run always - SridharKesari'
-	}
-	success{
+		always{
+			echo 'I am awesome. I run always - SridharKesari'
+		}
+		success{
 		echo 'I run when you are successful - SridharKesari'
-	}
-	failure{
+	    }
+	    failure{
 		echo 'I run when you fail - SridharKesari'
+	    }
 	}
 }
 
